@@ -1,0 +1,72 @@
+.container{
+    background-color: rgba(0, 0, 0, 0.750);
+    height: 100vh;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10vh;
+}
+
+li{
+    list-style: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.completed{
+    background-color: green;
+    color: white;
+    font-weight: 500;
+}
+
+.pending{
+    background-color: yellow;
+    color: black;
+    font-weight: 500;
+}
+
+.time{
+    margin-right: 2vw;
+    padding: 20px 10px;
+    border-right: 1px solid white;
+}
+
+.name{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-right: 2vw;
+}
+
+.text{
+    font-size: 1.2rem;
+    margin-right: 2vw;
+}
+
+.des{
+    font-size: 0.8rem;
+    margin-right: 2vw;
+}
+
+.status{
+    margin-right: 2vw;
+}
+
+.statuspending{
+    margin-right: 2vw;
+    color: red;
+}
+
+.pendingbtn{
+    padding: 5px;
+    background-color: green;
+    border: 1px solid transparent;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    font-weight: 600;
+}

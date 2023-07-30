@@ -1,5 +1,5 @@
 import { toggleTodo } from "../../redux/actions/todoActions";
-import "./ToDoList.css";
+import style from "./todolist.module.css"
 import { useDispatch, useSelector } from "react-redux";
 
 function ToDoList() {
@@ -11,15 +11,15 @@ function ToDoList() {
   }
   
   return (
-    <div className="container">
+    <div className={style.container}>
     <ul>
       {todos.map((todo,index) => (
-        <li key={todo.id}>
-          <span className="content">{todo.text}</span>
-          <span className={todo.completed ? 'completed':'pending'}>{todo.completed ? 'Completed': 'Pending'}</span>
-          <button className="btn btn-warning"
+        <li className={style.list} key={todo.id}>
+          <span className={style.text}>{todo.text}</span>
+          <span className={todo.completed ? style.scompleted : style.spending}>{todo.completed ? 'Completed': 'Pending...'}</span>
+          <button className={todo.completed ? style.completedbtn : style.pendingbtn}
           onClick={()=>{onToggle(index)}}
-          >Toggle</button>
+          >{todo.completed ? 'Cancel': 'Completed'}</button>
           </li>
       ))}
     </ul>

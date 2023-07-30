@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./ToDoForm.css";
+import style from "./todoform.module.css";
 import { useDispatch } from "react-redux";
 import { addTodo } from "../../redux/actions/todoActions";
 
@@ -14,16 +14,17 @@ function ToDoForm() {
   };
 
   return (
-    <div className="container">
+    <div className={style.container}>
       
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        className="form-control mb-3"
         value={todoText}
         onChange={(e) => setTodoText(e.target.value)}
+        required
+        placeholder="Enter a TODO Task"
       />
-      <button className="btn btn-success float-end" type="submit">Create Todo</button>
+      <button className={style.submit}>Create Todo</button>
     </form>
     </div>
   );

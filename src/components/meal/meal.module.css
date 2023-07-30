@@ -1,0 +1,42 @@
+.container{
+    background-color: rgba(0, 0, 0, 0.750);
+    color: white;
+}
+
+.title{
+    font-size: 2rem;
+    margin-bottom: 5vh;
+    text-align: center;
+    color: gold;
+    font-weight: 700;
+
+    
+}
+
+.mealcon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.meal{
+    border: 2px solid black;
+    width: 300px;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: white;
+}
+
+.meal img{
+    height: 300px;
+    width: 297px;
+    border-radius: 10px 10px 0 0;
+}
+
+.meal div{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+    font-family: 'Ysabeau SC', sans-serif;
+}

@@ -1,0 +1,23 @@
+.container{
+    background-color: rgba(0, 0, 0, 0.850);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    width: 30vw;
+    height: 5vh;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.submit{
+    height: 5vh;
+    width: 10vw;
+    margin-left: 2vw;
+    border-radius: 10px;
+    background-color: greenyellow;
+}

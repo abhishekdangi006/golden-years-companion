@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cardo&family=Lugrasimo&family=Ysabeau+SC:wght@600&display=swap');
+
+/* font-family: 'Acme', sans-serif;
+font-family: 'Cardo', serif; //paragraph
+font-family: 'Lugrasimo', cursive; 
+font-family: 'Ysabeau SC', sans-serif; */
+
+.container{
+    background-color: rgba(0, 0, 0, 0.750);
+    height: 180vh;
+    color: white;
+}
+
+.titlecon{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+}
+
+div{
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    font-family: 'Lugrasimo', cursive;
+    font-size: 5rem;
+    color: gold;
+    margin: 20vh 5vw 0 5vh;
+}
+
+.des{
+    font-family: 'Acme', sans-serif;
+    color: gold;
+    margin-top: 8vh;
+    border-left: 3px solid gold;
+    padding: 10%;
+    font-size: 1.5rem;
+}
+
+.feature{
+    font-family: 'Lugrasimo', cursive;
+    color: white;
+    align-items: start;
+
+}
+
+.featurecon{
+    margin: 0 5vw;
+}
+
+.headings{
+    color: chartreuse;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+.paragraph{
+    color: white;
+    font-family: 'Cardo', serif;
+    margin-left: 2vw;
+}
+
+@media screen and (max-width: 1100px){
+    .des{
+        margin-top: 2vh;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .title{
+        font-size: 4rem;
+    }
+    
+    .des{
+        margin-top: 2vh;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .title{
+        font-size: 3rem;
+    }
+    
+    .des{
+        margin-top: 2vh;
+        font-size: 1.2rem;
+    }
+
+    .container{
+        background-color: rgba(0, 0, 0, 0.750);
+        height: 220vh;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .title{
+        margin: 20vh 2vw 0 2vh;
+        font-size: 2.5rem;
+    }
+    
+    .des{
+        font-size: 1rem;
+        padding: 10%;
+    }
+}

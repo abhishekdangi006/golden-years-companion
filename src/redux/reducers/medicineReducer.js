@@ -3,15 +3,51 @@ import {TOGGLE_Medicine} from "../actions/medicineActions";
 const initialState = {
     medicines:[
         {
-            "name": "falani",
-            "time": "9 AM",
-            "description":"Meeting at 9",
+            "name": "Amlodipine",
+            "time": "before breakfast",
+            "description":"bp medicine",
             completed: false,
         },
         {
-            "name": "falani",
-            "time": "9 AM",
-            "description":"Meeting at 9",
+            "name": "Beta-Blockers",
+            "time": "after breakfast",
+            "description":"heart medicine",
+            completed: false,
+        },
+        {
+            "name": "Insulin",
+            "time": "before lunch",
+            "description":"Diabetes medicine",
+            completed: false,
+        },
+        {
+            "name": "Beta-Blockers",
+            "time": "after lunch",
+            "description":"heart medicine",
+            completed: false,
+        },
+        {
+            "name": "SGLT-2 Inhibitors",
+            "time": "before dinner",
+            "description":"bp medicine",
+            completed: false,
+        },
+        {
+            "name": "Beta-Blockers",
+            "time": "before dinner",
+            "description":"heart medicine",
+            completed: false,
+        },
+        {
+            "name": "Meglitinides",
+            "time": "after dinner",
+            "description":"bp medicine",
+            completed: false,
+        },
+        {
+            "name": "Metformin",
+            "time": "after dinner",
+            "description":"Diabetes medicine",
             completed: false,
         },
     ]

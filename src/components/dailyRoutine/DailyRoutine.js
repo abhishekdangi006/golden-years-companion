@@ -1,5 +1,6 @@
 import { toggleRoutine } from "../../redux/actions/routineActions";
 import { useDispatch, useSelector } from "react-redux";
+import style from "../medicineReminder/medicine.module.css"
 
 function DailyRoutine() {
   
@@ -10,15 +11,16 @@ function DailyRoutine() {
   }
   
   return (
-    <div className="container">
+    <div className={style.container}>
     <ul>
       {routines.map((routine,index) => (
-        <li key={index}>
-          <span className="content">{routine.text}</span>
-          <span className={routine.completed ? 'completed':'pending'}>{routine.completed ? 'Completed': 'Pending'}</span>
-          <button className="btn btn-warning"
+        <li className={routine.completed ? style.completed : style.pending} key={index}>
+          <span className={style.time}>{routine.time}</span>
+          <span className={style.text}>{routine.text}</span>
+          <span className={routine.completed ? style.status : style.statuspending}>{routine.completed ? 'Completed': 'Pending...'}</span>
+          <button className={routine.completed ? style.completedbtn : style.pendingbtn}
           onClick={()=>{onToggle(index)}}
-          >Toggle</button>
+          >{routine.completed ? '': 'Done'}</button>
           </li>
       ))}
     </ul>

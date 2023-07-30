@@ -3,11 +3,48 @@ import {TOGGLE_Routine} from "../actions/routineActions";
 const initialState = {
     routines:[
         {
-            "text":"Meeting at 9",
+            "time": "7AM",
+            "text":"Go to walk",
             completed: false,
         },
         {
-            "text":"Go to gym",
+            "time": "8AM",
+            "text":"take breakfast",
+            completed: false,
+        },
+        {
+            "time": "9AM",
+            "text":"go to temple",
+            completed: false,
+        },
+        {
+            "time": "12PM",
+            "text":"Lunch time",
+            completed: false,
+        },
+        {
+            "time": "2PM",
+            "text":"Take Power nape",
+            completed: false,
+        },
+        {
+            "time": "4PM",
+            "text":"Snack time",
+            completed: false,
+        },
+        {
+            "time": "5PM",
+            "text":"Social time",
+            completed: false,
+        },
+        {
+            "time": "8PM",
+            "text":"Dinner Time",
+            completed: false,
+        },
+        {
+            "time": "10PM",
+            "text":"Sleep Now",
             completed: false,
         },
     ]
