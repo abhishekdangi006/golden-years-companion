@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+<h1>Golden Years Companion</h1>
+<h5>Welcome to "Golden Years Companion" - a website designed with love and care to empower and support our beloved seniors in making the most of their golden years. Our mission is to enhance the lives of older individuals by providing them with tools and resources to lead fulfilling and healthy lives.</h5>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br/><br/>
 
-## Available Scripts
+<h3>Basic Functionality</h3>
+<h4>Personalized To-Do List</h4>
+<h4>Nutritious Meal Suggestions</h4>
+<h4>Daily Routine Checklist</h4>
+<h4>Medicine Checklist</h4>
 
-In the project directory, you can run:
 
-### `npm start`
+<br/><br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h3>Links:-</h3>
+<h4>Home page: https://golden-years-companion.netlify.app/</h4>
+<h4>MY Day page: https://golden-years-companion.netlify.app/myday</h4>
+<h4>Daily Routine Checklist page: https://golden-years-companion.netlify.app/routine</h4>
+<h4>Medicine Checklist page: https://golden-years-companion.netlify.app/medicine</h4>
+<h4>Meal page: https://golden-years-companion.netlify.app/meal</h4>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+<br/><br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h3>How to run the project in local server
+</h3>
+<h4>Download the Zip file of the Golden years companion</h4>
+<h4>Extract the file</h4>
+<h4>Open the terminal</h4>
+<h4>npm install</h4>
+<h4>npm start</h4>
+<br/><br/>
+<h3>Screenshots</h3>
 
-### `npm run build`
+<h4>Home page</h4>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![home](https://github.com/abhishekdangi006/golden-years-companion/assets/76874880/cdd63e9a-7556-4007-8f65-ba830082a6d0)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h4>MY Day page</h4>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![todo](https://github.com/abhishekdangi006/golden-years-companion/assets/76874880/3d1ad9eb-29fd-4f23-b64e-bd53b1e8a9e5)
 
-### `npm run eject`
+<h4>Daily Routine Checklist page</h4>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![routine](https://github.com/abhishekdangi006/golden-years-companion/assets/76874880/59b023a5-76b2-4907-ade3-d708514cfff3)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h4>Medicine Checklist page</h4>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![medicine](https://github.com/abhishekdangi006/golden-years-companion/assets/76874880/c5992bb4-42c0-4457-8124-60d5966f0f65)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<h4>Meal page</h4>
 
-## Learn More
+![meal](https://github.com/abhishekdangi006/golden-years-companion/assets/76874880/69fabfa2-5093-4d99-9b19-0a59f6ba705e)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
