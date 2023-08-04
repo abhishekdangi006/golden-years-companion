@@ -1,3 +1,4 @@
+import { createSlice } from "@reduxjs/toolkit";
 import {TOGGLE_Routine} from "../actions/routineActions";
 
 const initialState = {
@@ -49,7 +50,26 @@ const initialState = {
         },
     ]
 }
+//using redux toolkit
 
+const routineSlice = createSlice({
+    name: routine,
+    initialState,
+    reducers: {
+        toggle: (state, action)=>{
+            state.routines.map((routine, i)=> {
+                if(i === action.payload){
+                    routine.completed = !routine.completed;
+                }
+                return routine;
+            })
+        }
+    }
+})
+
+// without react redux toolkit
+
+/*
 export function routineReducer (state=initialState , action){
     switch(action.type){
         case TOGGLE_Routine:
@@ -67,3 +87,5 @@ export function routineReducer (state=initialState , action){
             return state;
     }
 }
+
+*/
