@@ -1,13 +1,15 @@
-import { toggleTodo } from "../../redux/actions/todoActions";
+// import { toggleTodo } from "../../redux/actions/todoActions";
+import { actions, todoSelector } from "../../redux/reducers/todoReducer";
 import style from "./todolist.module.css"
 import { useDispatch, useSelector } from "react-redux";
 
 function ToDoList() {
   
-  const todos = useSelector((state) => state.todos);
+  const todos = useSelector(todoSelector);
   const dispatch = useDispatch();
   const onToggle = (index)=>{
-    dispatch(toggleTodo(index))
+    // dispatch(toggleTodo(index))
+    dispatch(actions.toggle(index));
   }
   
   return (

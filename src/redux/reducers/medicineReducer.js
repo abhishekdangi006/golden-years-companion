@@ -1,4 +1,5 @@
-import {TOGGLE_Medicine} from "../actions/medicineActions";
+import { createSlice } from "@reduxjs/toolkit";
+// import {TOGGLE_Medicine} from "../actions/medicineActions";
 
 const initialState = {
     medicines:[
@@ -53,6 +54,26 @@ const initialState = {
     ]
 }
 
+
+const medicineSlice = createSlice({
+    name: "medicine",
+    initialState,
+    reducers : {
+        toggle : (state, action) => {
+            state.medicines.map((medicine, i) => {
+                if(i === action.payload){
+                    medicine.completed = !medicine.completed;
+                }
+                return medicine;
+            })
+        }
+    }
+})
+
+export const medicineReducer = medicineSlice.reducer;
+export const actions = medicineSlice.actions;
+
+/*
 export function medicineReducer (state=initialState , action){
     switch(action.type){
         case TOGGLE_Medicine:
@@ -70,3 +91,5 @@ export function medicineReducer (state=initialState , action){
             return state;
     }
 }
+
+*/

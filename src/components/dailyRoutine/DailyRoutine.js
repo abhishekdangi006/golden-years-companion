@@ -1,13 +1,15 @@
-import { toggleRoutine } from "../../redux/actions/routineActions";
+// import { toggleRoutine } from "../../redux/actions/routineActions";
 import { useDispatch, useSelector } from "react-redux";
 import style from "../medicineReminder/medicine.module.css"
+import { actions, routineSelector } from "../../redux/reducers/routineReducer";
 
 function DailyRoutine() {
   
-  const routines = useSelector((state) => state.routines);
+  const routines = useSelector(routineSelector);
   const dispatch = useDispatch();
   const onToggle = (index)=>{
-    dispatch(toggleRoutine(index))
+    // dispatch(toggleRoutine(index))
+    dispatch(actions.toggle(index));
   }
   
   return (

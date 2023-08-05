@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import {TOGGLE_Routine} from "../actions/routineActions";
+// import {TOGGLE_Routine} from "../actions/routineActions";
 
 const initialState = {
     routines:[
@@ -53,7 +53,7 @@ const initialState = {
 //using redux toolkit
 
 const routineSlice = createSlice({
-    name: routine,
+    name: "routine",
     initialState,
     reducers: {
         toggle: (state, action)=>{
@@ -66,6 +66,10 @@ const routineSlice = createSlice({
         }
     }
 })
+
+export const routineReducer = routineSlice.reducer;
+export const actions = routineSlice.actions;
+export const routineSelector = (state) => state.routineReducer.routines;
 
 // without react redux toolkit
 
